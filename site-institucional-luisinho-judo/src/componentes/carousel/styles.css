@@ -1,0 +1,115 @@
+.carousel-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1.4;
+  font-size: larger;
+}
+
+.carousel-item.sideActive {
+  opacity: 1;
+  transform: scale(0.6);
+  filter: blur(5px);
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto;
+  transition: filter 0.6s ease-in-out;
+}
+
+.carousel-item-wrapper{
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonteWork);
+  gap: 50px;
+}
+
+.carousel-item:not(.active) .carousel-image {
+  filter: blur(2px);
+}
+
+.carousel-item h2 {
+  font-size: var(--h2);
+}
+
+.carousel-item h2,
+.carousel-item p {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.carousel-item.active h2,
+.carousel-item.active p {
+  opacity: 1;
+}
+
+.carousel-navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-button {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: black;
+}
+
+.nav-button.left::before,
+.nav-button.right::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  transition: border-color 0.3s;
+}
+
+.nav-button.left::before {
+  transform: rotate(135deg);
+}
+
+.nav-button.right::before {
+  transform: rotate(-45deg);
+}
+
+.nav-button:hover::before {
+  border-color: white;
+}

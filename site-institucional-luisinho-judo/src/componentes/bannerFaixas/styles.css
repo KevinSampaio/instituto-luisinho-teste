@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte);
+}
+
+.container_faixasHero {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/secondpart.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 80px;
+}
+
+.text_faixas {
+    align-items: center;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.text_faixas h1 {
+    color: white;
+    font-size: 50px;
+    font-family: var(--fonteWork);
+    position: relative;
+    z-index: 1;
+}
+
+.image_hero_content {
+    width: 100%;
+    max-width: 1500px;
+}
+
+.japonese-letters {
+    width: 100%;
+    position: absolute;
+    font-size: 100px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    text-stroke: 2px black;
+    z-index: 0;
+    font-family: var(--fonteLato);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.5;
+}

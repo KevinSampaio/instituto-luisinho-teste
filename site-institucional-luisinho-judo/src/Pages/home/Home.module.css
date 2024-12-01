@@ -1,0 +1,19 @@
+.fullContainerPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0;
+}
+
+.fullContainerPage > * {
+  width: 100%;
+  overflow-x: hidden;
+}

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_lutasHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    background-image: url(assets/lutas.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: var(--fonteWork);
+}
+
+.imagem_hero_content {
+    padding: 0px 80px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.imagem_hero_content h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.imagem_hero_content p {
+    margin: 10px 0;
+    text-align: start;
+}
+
+.principles {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.principle {
+    background-color: #000;
+    margin: 10px;
+    border-radius: 5px;
+    width: calc(50% - 20px);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-color: white;
+    border: 1px solid white;
+}
+
+.principle span {
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 1px solid white;
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: baseline;
+}
+
+.principle small {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.points {
+    margin: 20px 0;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.perfectPoint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title_perfect_point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 150px;
+}
+
+.title_perfect_point h1 {
+    position: absolute;
+    z-index: 2;
+}
+
+.japanese-letters-judo {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    text-stroke: 2px black;
+    z-index: 0;
+    font-family: var(--fonteLato);
+}
+
+/* CARD ESSENCE */
+
+.card_essence {
+    width: 289px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    border-radius: 8px 0px 0px 0px;
+    border: 2px solid white;
+    text-align: start;
+}
+
+.card_left_number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 74px;
+    font-size: var(--h3);
+    font-weight: 700;
+}
+
+.card_right_text {
+    width: 209px;
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 10px;
+    color: #000;
+}
+
+.title_card_essence {
+    font-size: var(--h6);
+    font-weight: 400;
+}
+
+.text_card_essence {
+    font-size: var(--bodyMedium);
+    font-weight: 300;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* CARD HISTORY */
+
+.card_history{
+    width: 250px;
+    height: 250px;
+    border-radius: 12px 12px 0px 0px;
+    color: white;
+}
+
+.text_card_history{
+    padding: 10px;
+    font-size: var(--bodyMedium);
+    font-weight: 300;
+    color: #000;
+    background-color: #ffffff;
+}
+.card_top_image{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0px 0px;
+    justify-content: center;
+}
